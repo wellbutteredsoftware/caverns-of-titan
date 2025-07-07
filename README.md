@@ -1,2 +1,21 @@
-# caverns-of-titan
-This is an exploration game written entirely in Rust, a former game jam project turned hobby project.
+# Caverns of Titan
+
+![Static Badge](https://img.shields.io/badge/Built_with-rust-orange?logo=rust)
+
+This is an exploration game written entirely in Rust, a former game jam project turned hobby project. The game has a small scope due to the circumsatances it was designed in. Due to personal issues however, the project was never finished past some basic mechanics. This started in C++, but since I've been learning Rust, I chose to re-write everything here as a nice challenge to myself.
+
+The project takes place deep in the icy depths of Titan, one of Saturn's many moons. Your goal as a lost explorer, one who can barely communicate with the world, is to survive the horrors that may reside within while you collect the tools to escape.
+
+## How to Play
+
+> [!IMPORTANT]
+> Coming soon to a README near you.
+
+## How to Escape
+
+> [!IMPORTANT]
+> Coming soon to a README near you.
+
+## Contributing?
+
+It's awesome that you want to contribute! Since this is just a small project, without any massive time investment into configuration and CD/CI shenanigans, I don't have any real *design standards* or rules when it comes to contributing. Keep your Rust in `snake_case` and don't overengineer everything, please!

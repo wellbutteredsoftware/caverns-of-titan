@@ -7,7 +7,10 @@
 # MouseRight -> Delete Tile
 # Tab        -> Swap Type
 # S          -> Save to .room
-
+#
+# TODOS:
+# * Add file reading
+# * GUI improvements
 
 import pygame
 import sys
@@ -19,6 +22,7 @@ WINDOW_WIDTH = TILE_SIZE * GRID_WIDTH
 WINDOW_HEIGHT = TILE_SIZE * GRID_HEIGHT
 FPS = 60
 
+# More info on tile types can be found in `src/room.rs` !
 TILE_TYPES = ["Solid", "Ice", "Platform"]
 TILE_COLORS = {
     "Solid": (100, 100, 100),
@@ -28,7 +32,7 @@ TILE_COLORS = {
 
 pygame.init()
 screen = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
-pygame.display.set_caption("Rust Room Editor")
+pygame.display.set_caption("CoT Room Editor")
 clock = pygame.time.Clock()
 font = pygame.font.SysFont(None, 24)
 

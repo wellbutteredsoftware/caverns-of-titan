@@ -8,8 +8,15 @@ The project takes place deep in the icy depths of Titan, one of Saturn's many mo
 
 ## How to Play
 
-> [!IMPORTANT]
-> Coming soon to a README near you.
+> [!TIP]
+> Keybinds cannot be edited once the project is built.
+
+| Action | Keys |
+| ------ | ---- |
+| Move Up | W or Up-Arrow |
+| Move Down | S or Down-Arrow |
+| Move Left | A or Left-Arrow |
+| Move Right | D or Right-Arrow |
 
 ## How to Escape
 

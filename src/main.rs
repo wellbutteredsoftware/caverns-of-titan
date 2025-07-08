@@ -1,17 +1,18 @@
 mod player;
-mod audio;
 
 use macroquad::prelude::*;
 use crate::player::Player;
-use crate::audio::stream_audio;
 
 #[macroquad::main("Caverns of Titan")]
 async fn main() {
     
     // Game and utility initalizing
-    let mut plr = Player::new(screen_width() / 2.0, screen_height() / 2.0, 32.0, 32.0, 200.0);
+    let mut plr = Player::new(
+        screen_width() / 2.0, 
+        screen_height() / 2.0, 
+        32.0, 64.0, 200.0, 
+        400.0).await;
 
-    stream_audio("intro").await;
     loop {
         clear_background(BLACK);
 

@@ -5,3 +5,18 @@ edition = "2024"
 
 [dependencies]
 macroquad = { version = "0.4.14", features = ["audio"] }
+
+# Development / Debug config is highly unoptimized and loaded with symbols
+[profile.dev]
+opt-level = 0
+debug = true
+lto = false
+panic = "unwind"
+
+# Release is optimized and shrunk massively since the main target is wasm32
+[profile.release]
+opt-level = "z"
+debug = false
+lto = "thin"
+codegen-units = 1
+panic = "abort"

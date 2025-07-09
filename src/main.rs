@@ -11,7 +11,7 @@ async fn main() {
         screen_width() / 2.0, 
         screen_height() / 2.0, 
         32.0, 64.0, 200.0, 
-        400.0).await;
+        400.0, "default".to_string()).await;
 
     loop {
         clear_background(BLACK);

@@ -8,6 +8,7 @@ pub struct Player {
     pub speed: f32,
     pub grounded: bool,
     pub jump_strength: f32,
+    pub current_room: String,
 
     // Sound effects
     pub sfx_jump: Option<Sound>,
@@ -15,7 +16,7 @@ pub struct Player {
 }
 
 impl Player {
-    pub async fn new(px: f32, py: f32, sx: f32, sy: f32, spd: f32, jump_strength: f32) -> Self {
+    pub async fn new(px: f32, py: f32, sx: f32, sy: f32, spd: f32, jump_strength: f32, curr_room: String) -> Self {
         let sfx_jump = load_sound("jump_plr.wav").await.ok();
         let sfx_bonk = load_sound("bonk_plr.wav").await.ok();
 
@@ -28,10 +29,11 @@ impl Player {
             jump_strength,
             sfx_jump,
             sfx_bonk,
+            current_room: curr_room,
         }
     }
 
-    /// TODO: Consider adding ini compatibility for desktop players?
+    /// TODO: Consider using toml crate for user config
     pub fn update(&mut self) {
         let dt = get_frame_time();
         let mut move_speed = self.speed;

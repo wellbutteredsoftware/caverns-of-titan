@@ -6,15 +6,15 @@ pub struct Room {
     pub bg_colour: Color,
     pub exits: Vec<Exit>,
     pub tiles: Vec<Tile>,
-    pub has_ice: bool,
 }
 
 pub struct Exit {
-
+    pub points_to: String,
+    pub pos: Vec2,
 }
 
 pub struct Tile {
-
+   
 }
 
 pub enum TileKind {
@@ -27,3 +27,5 @@ pub enum TileKind {
 pub enum Rooms {
     
 }
+
+/// TODO: Functions to init rooms, load and verify them, etc.

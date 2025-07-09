@@ -11,9 +11,11 @@
 # TODOS:
 # * Add file reading
 # * GUI improvements
+# * Re-write into toml and comply to expected Rust 
 
 import pygame
 import sys
+import toml
 
 TILE_SIZE = 32
 GRID_WIDTH = 25   # 800 px
